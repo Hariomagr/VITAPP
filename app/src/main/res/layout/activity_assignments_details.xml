@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".assignments_details">
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tool"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar_facultyy"
+            android:layout_width="match_parent"
+            android:background="?attr/colorPrimary"
+            android:layout_height="?attr/actionBarSize"
+            app:popupTheme="@style/AppTheme.PopupOverlay"
+            android:elevation="4dp" />
+
+    </android.support.design.widget.AppBarLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_below="@+id/tool"
+        android:layout_height="match_parent">
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_below="@+id/card22"
+                android:layout_height="wrap_content"
+                app:cardBackgroundColor="#ffffff"
+                android:foregroundGravity="center"
+                app:cardCornerRadius="1dp"
+                app:cardElevation="5dp"
+                android:paddingBottom="10dp"
+                android:id="@+id/card13"
+                android:paddingTop="10dp">
+                <ListView
+                    android:scrollbars="none"
+                    android:id="@+id/listi"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/search"
+                    android:divider="@null"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp" />
+            </android.support.v7.widget.CardView>
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "676865880192",
+    "firebase_url": "https://vitapp-77014.firebaseio.com",
+    "project_id": "vitapp-77014",
+    "storage_bucket": "vitapp-77014.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:676865880192:android:7808eb80a8161dc9",
+        "android_client_info": {
+          "package_name": "com.example.lerningapps.vitapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "676865880192-3nlaum0q11n4lnjetl1lfrrqh940jh07.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.lerningapps.vitapp",
+            "certificate_hash": "08611a4ed1a71762b4de0b88148882e8c345867f"
+          }
+        },
+        {
+          "client_id": "676865880192-816lu3cop7uovrmmep213umktgk4c86q.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAuLy4WoErPArP4E__WHXouxxaP3euVoDE"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "676865880192-816lu3cop7uovrmmep213umktgk4c86q.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

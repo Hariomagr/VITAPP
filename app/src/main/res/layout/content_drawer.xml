@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".Drawer"
+    tools:showIn="@layout/app_bar_drawer">
+    <android.support.v7.widget.CardView
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardBackgroundColor="#ffffff"
+        app:cardCornerRadius="1dp"
+        app:cardElevation="2dp"
+        android:id="@+id/card4"
+        android:layout_marginBottom="10dp"
+        android:paddingTop="10dp"
+        android:visibility="gone">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="20dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="No more classes for Today"
+            android:textAlignment="center"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textSize="25dp" />
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+    <android.support.v7.widget.CardView
+        android:layout_marginTop="5dp"
+        android:layout_below="@+id/card4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardBackgroundColor="#ffffff"
+        app:cardCornerRadius="1dp"
+        app:cardElevation="2dp"
+        android:id="@+id/card2"
+        android:paddingTop="10dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+            <TextView
+            android:layout_width="match_parent"
+            android:id="@+id/header_sub"
+            android:layout_height="30dp"
+            android:text="Object Oriented Design and Analysis"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:ellipsize="end"
+            android:maxLines="1"
+            />
+
+            <TextView
+            android:id="@+id/header_time"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:text="Time Remaining: 1 hour 30 minutes"
+                android:gravity="center"/>
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="116dp"
+            android:orientation="horizontal">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="center">
+            <TextView
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:id="@+id/header_venue"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                android:text="Venue: SJT101" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/header_att"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_gravity="center"
+                    android:text="100%"
+                    android:textSize="30dp" />
+
+                <com.mikhaellopez.circularprogressbar.CircularProgressBar
+                    android:id="@+id/header_circular"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_centerInParent="true"
+                    android:layout_gravity="center"
+                    android:foregroundGravity="center"
+                    app:cpb_background_progressbar_color="?attr/colorPrimary"
+                    app:cpb_background_progressbar_width="2dp"
+                    app:cpb_progress="50"
+                    app:cpb_progressbar_color="#ff2112"
+                    app:cpb_progressbar_width="6dp" />
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:background="#ffffff"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageButton
+                        android:id="@+id/up_att"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:background="#ffffff"
+                        android:src="@drawable/ic_arrow_drop_up_black_24dp" />
+
+                    <ImageButton
+                        android:id="@+id/up_miss"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:background="#ffffff"
+                        android:src="@drawable/ic_arrow_drop_up_black_24dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="70dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/header_attend"
+                        android:layout_width="70dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="33dp"
+                        android:gravity="center"
+                        android:text="Attend" />
+
+                    <TextView
+                        android:id="@+id/header_miss"
+                        android:layout_width="70dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center"
+                        android:text="Miss" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageButton
+                        android:id="@+id/down_att"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:background="#ffffff"
+                        android:src="@drawable/ic_arrow_drop_down_black_24dp" />
+
+                    <ImageButton
+                        android:id="@+id/down_miss"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:background="#ffffff"
+                        android:src="@drawable/ic_arrow_drop_down_black_24dp" />
+                </LinearLayout>
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/today"
+            android:layout_marginTop="3dp"
+            android:layout_marginLeft="4dp"
+            android:text="Today"
+            android:layout_below="@+id/card2"
+            android:textSize="20dp"/>
+
+    <android.support.v7.widget.CardView
+        android:layout_marginTop="1dp"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/today"
+        android:layout_height="wrap_content"
+        app:cardBackgroundColor="#ffffff"
+        app:cardCornerRadius="1dp"
+        app:cardElevation="2dp"
+        android:id="@+id/card1"
+        android:paddingTop="10dp">
+
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/listview1"
+        android:divider="@null">
+    </ListView>
+
+    </android.support.v7.widget.CardView>
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:id="@+id/container"/>
+</RelativeLayout>
